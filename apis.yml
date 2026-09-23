@@ -1,23 +1,76 @@
 aid: the-mlc
+
 name: The MLC
-description: 'The MLC is a company surfaced via the API Evangelist harvest backlog (source: music) and
-  added to the network as a stub for full-pipeline profiling.'
+
+image: https://www.themlc.com/hubfs/Marketing/Logos/The%20MLC%20Logos/Icon/MLC_Icon_HEX.jpg
+
+description: 'The Mechanical Licensing Collective (MLC) is a U.S. statutory organization that administers mechanical licensing and royalty distribution for music creators. It provides a centralized database of musical works, facilitates licensing for digital music services, and ensures creators receive proper compensation. The MLC offers APIs and data services to support industry participants in accessing catalog information, licensing data, and royalty reports.'
+
 url: https://raw.githubusercontent.com/api-evangelist/the-mlc/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:music
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-09-22 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-09-22'
+
 modified: '2026-09-22'
+
 tags:
-- Company
-apis: []
+- Music
+- Licensing
+- Royalties
+- API
+- Collective
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Hosts
+  url: hosts/the-mlc-hosts.yml
+- type: Vendors
+  url: vendors/the-mlc-vendors.yml
+- type: TermsOfService
+  url: https://www.themlc.com/terms-use
+- type: PrivacyPolicy
+  url: https://www.themlc.com/privacy-policy
+- type: Newsroom
+  url: https://www.themlc.com/news
+- type: GettingStarted
+  url: https://www.themlc.com/get-started
+- type: DeveloperPortal
+  url: https://portal.themlc.com/
+- type: GitHubOrganization
+  url: https://github.com/TheMLC
+- type: DomainSecurity
+  url: security/the-mlc-domain-security.yml
 - type: Website
-  url: https://themlc.com/
+  url: https://www.themlc.com/
+- type: Blog
+  url: https://blog.themlc.com/
+
+apis: []
+
+x-coverage:
+  state: unreadable
+  reason: js-rendered-docs
+  detail: The developer portal at https://portal.themlc.com renders a JavaScript SPA and provides no machine‑readable API specification.
+  evidence:
+    - url: https://portal.themlc.com/
+      status: 200
+  checked: 2026-09-22
+x-enrichment:
+  date: '2026-09-22'
+  status: enriched
+  artifacts_added: 5
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local

@@ -1,0 +1,91 @@
+generated: '2026-09-22'
+method: derived
+source: the pre-flight dossier, apis.yml pointers, spec servers, well-known, vendors -- nothing fetched here
+generator: derive-hosts.py
+summary:
+  hosts: 6
+  own: 5
+  other_domain: 0
+  platform: 1
+  roles:
+  - api
+  - marketing
+  - other
+  - portal
+  - source
+  - website
+hosts:
+- host: api.themlc.com
+  found_by:
+  - contract-discovery
+  types: []
+  serves: []
+  registrable_domain: themlc.com
+  role: api
+  relation: own
+- host: blog.themlc.com
+  found_by:
+  - pointer
+  - probed
+  - site-links
+  - contract-discovery
+  - well-known
+  types:
+  - Blog
+  serves: []
+  registrable_domain: themlc.com
+  role: marketing
+  relation: own
+- host: github.com
+  found_by:
+  - pointer
+  types:
+  - GitHubOrganization
+  serves: []
+  registrable_domain: github.com
+  role: source
+  relation: platform
+- host: portal.themlc.com
+  found_by:
+  - pointer
+  - probed
+  - site-links
+  - docs-index
+  - contract-discovery
+  - well-known
+  types:
+  - DeveloperPortal
+  serves:
+  - docs
+  registrable_domain: themlc.com
+  role: portal
+  relation: own
+- host: themlc.com
+  found_by:
+  - probed
+  - contract-discovery
+  - well-known
+  types: []
+  serves: []
+  registrable_domain: themlc.com
+  role: other
+  relation: own
+- host: www.themlc.com
+  found_by:
+  - pointer
+  - docs-index
+  - vendor-detect
+  types:
+  - TermsOfService
+  - PrivacyPolicy
+  - Newsroom
+  - GettingStarted
+  - Website
+  serves:
+  - docs
+  - cdn
+  - hosting
+  vendor: cloudflare
+  registrable_domain: themlc.com
+  role: website
+  relation: own

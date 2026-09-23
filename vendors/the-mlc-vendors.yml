@@ -1,0 +1,41 @@
+generated: '2026-09-22'
+method: probed
+source: pre-flight dossier (docs platform, portal detections) + CNAME chains and response headers of the hosts apis.yml names
+registry: all/0-working/vendors.yml
+areas_vocabulary:
+- documentation
+- developer-portal
+- api-gateway
+- cdn
+- hosting
+- sdk-generation
+- api-collections
+- status-page
+- support
+- community
+- identity
+- mcp-hosting
+vendors:
+- vendor: cloudflare
+  name: Cloudflare
+  area: cdn
+  host: www.themlc.com
+  evidence: header:cf-ray
+  signal: header
+  confidence: high
+  kin_score:
+  - https_enforced
+  - hsts
+- vendor: hubspot
+  name: HubSpot
+  area: hosting
+  host: www.themlc.com
+  evidence: cname:hubspot.net
+  signal: cname
+  confidence: high
+  kin_score: []
+checked:
+- 'docs-platform: no-docs-host'
+- www.themlc.com (GettingStarted)
+- portal.themlc.com (DeveloperPortal)
+- www.themlc.com (Website)
