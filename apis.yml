@@ -19,7 +19,7 @@ specificationVersion: '0.20'
 
 created: '2026-09-22'
 
-modified: '2026-09-22'
+modified: '2026-10-06'
 
 tags:
 - Music
@@ -40,6 +40,8 @@ maintainers:
   email: info@apis.io
 
 common:
+- url: https://www.themlc.com/news/rss.xml
+  type: BlogRSS
 - type: Hosts
   url: hosts/the-mlc-hosts.yml
 - type: Vendors
