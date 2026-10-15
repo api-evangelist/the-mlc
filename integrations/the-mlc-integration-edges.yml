@@ -1,0 +1,34 @@
+edges:
+- partner_name: DDEX (Digital Data Exchange)
+  partner: null
+  partner_match: register
+  type: register
+  direction: partner-built
+  channel: standard-directory
+  relationship: standard-participant
+  evidence: https://ddex.net/membership/current-members/
+  category: music metadata and rights messaging standard
+  contract_reference:
+    register: DDEX current members (ddex.net/membership/current-members)
+    spec_file: null
+    role: ddex-full-member
+    registered_name: The Mechanical Licensing Collective LLC
+    register_id: The Mechanical Licensing Collective LLC
+    tier: full
+    matched_domain: themlc.com
+    matched_by: domain+verified
+    identity: wikidata Q113111343 'The Mechanical Licensing Collective' P856 https://www.themlc.com/
+    detected_by: sweep-media.py
+    detected: '2026-10-15'
+    verified: DDEX full member 'The Mechanical Licensing Collective LLC'; all/the-mlc is named 'The MLC', Website
+      www.themlc.com
+  detected_by: sweep-media.py
+  first_seen: '2026-10-15'
+generated: '2026-10-15'
+method: searched
+source:
+- https://ddex.net/membership/current-members/
+- https://raw.githubusercontent.com/c2pa-org/conformance-public/main/conforming-products/conforming-products-list.json
+checked:
+- https://ddex.net/membership/current-members/
+- https://raw.githubusercontent.com/c2pa-org/conformance-public/main/conforming-products/conforming-products-list.json
